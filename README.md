@@ -46,9 +46,9 @@ let ckRecordId = "CLOUDKIT RECORD ID"
 
 
 ## Screenshots
-![Alt text](/scrennshots/screenshot1.png?raw=true)
-![Alt text](/scrennshots/screenshot2.png?raw=true)
-![Alt text](/scrennshots/screenshot3.png?raw=true)
+![Alt text](/screenshots/screenshot1.png?raw=true)
+![Alt text](/screenshots/screenshot2.png?raw=true)
+![Alt text](/screenshots/screenshot3.png?raw=true)
 
 
 

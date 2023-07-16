@@ -1,7 +1,8 @@
 
 # Securing Apikeys
 
-https://img.shields.io/badge/iOS-16.4
+[![Swift Version][swift-image]][swift-url]
+[![License][license-image]][license-url]
 
 This repository is part of NSCoder Night Madrid Talk "Securing Apikeys using Cloudkit".
 
@@ -55,4 +56,9 @@ let ckRecordId = "CLOUDKIT RECORD ID"
 
 ## 🚀 About Me
 I'm a iOS, tvOS and MacOS freelance developer since 2011
+
+[swift-image]:https://img.shields.io/badge/swift-5.0-orange.svg
+[swift-url]: https://swift.org/
+[license-image]: https://img.shields.io/badge/License-MIT-blue.svg
+[license-url]: LICENSE
 

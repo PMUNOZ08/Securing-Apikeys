@@ -14,7 +14,15 @@ The repository include:
 - Initial Project
 - Final Project
 
-The sample project is a simple app that uses an api service to show a grid with pictures. It present a picture on full screen when is selected and allow to make a mask with de logo of NSCoder Night Madrid
+The sample project is a simple app that uses an api service to show a grid with pictures. It present a picture on full screen when is selected and allow to make a mask with de logo of NSCoder Night Madrid.
+The initial project just store the access key in a constant and uses it.
+The final project in order to secure the access key:
+- Get the access key from Cloud kit in a secure way.
+- When the app gets the access key stores it in keychain to be resused after.
+- As an extra layer of security the access key in encrypted and decrypted using [Secure Enclave](https://support.apple.com/en-gb/guide/security/sec59b0b31ff/web)
+- To avoid the called "Man in the middle", la app makes use of SSL pining.
+- SSl pining can be performed using the host certificate or a hash of certificate public key 
+
 The app can be tested on iPhone, iPad, AppleTv o Mac
 
 

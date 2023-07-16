@@ -19,7 +19,7 @@ The app can be tested on iPhone, iPad, AppleTv o Mac
 
 
 
-## Usage/Examples
+## Usage
 
 The api used is [unsplash](https://unsplash.com)
 In order to test sample projects yout need an access key. Your can register and create a free new one on [Join Unsplash](https://unsplash.com/join)
@@ -43,6 +43,13 @@ After this steps you must replace this  with real values in class ApiKeyManager:
 let ckRecordId = "CLOUDKIT RECORD ID"
 
 ```
+
+
+## Screenshots
+![Alt text](/scrennshots/screenshot1.png?raw=true)
+![Alt text](/scrennshots/screenshot2.png?raw=true)
+![Alt text](/scrennshots/screenshot3.png?raw=true)
+
 
 
 

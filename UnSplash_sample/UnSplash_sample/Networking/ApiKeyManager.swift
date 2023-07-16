@@ -32,7 +32,7 @@ enum Api {
             return ApiInfo.init(ckRecordId: ckRecordId,
                                 ckRecordType: ckRecordType,
                                 ckField: "unplash",
-                                keychainLabel: "api_key_openai")
+                                keychainLabel: "api_key_unsplash")
         }
     }
 }

@@ -25,15 +25,17 @@ class UnplashClient: NSObject  {
     }()
 
     private let downloader: any HTTPDataDownloader
+    private let apikeyMAnager: ApiKeyManager
     private var page: Int = 1
-    init(downloader: any HTTPDataDownloader = URLSession.shared) {
+    init(downloader: any HTTPDataDownloader = URLSession.shared, apikeyManager: ApiKeyManager = ApiKeyManager()) {
         self.downloader = downloader
+        self.apikeyMAnager = apikeyManager
     }
     
     func fechtPhotos(page: Int = 1) async throws -> [UnplashPhoto] {
         self.page = page
         guard var urlRequest = urlRequest() else { return [] }
-        if let apiKeyUnplash = try? await ApiKeyManager.instance.key(for: .unplash) {
+        if let apiKeyUnplash = try? await apikeyMAnager.key(for: .unplash) {
             urlRequest.setValue("Client-ID \(apiKeyUnplash)", forHTTPHeaderField: "Authorization")
             
             let data = try await downloader.httpData(for: urlRequest, delegate: self)

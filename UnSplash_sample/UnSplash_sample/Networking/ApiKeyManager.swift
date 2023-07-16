@@ -53,8 +53,6 @@ class ApiKeyManager {
         static let accessGroup: String? = nil
         static let label: String? = nil
     }
-
-    static var instance = ApiKeyManager()
     
     // MARK - Async / Await
     @discardableResult

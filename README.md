@@ -1,6 +1,8 @@
 
 # Securing Apikeys
 
+https://img.shields.io/badge/iOS-16.4
+
 This repository is part of NSCoder Night Madrid Talk "Securing Apikeys using Cloudkit".
 
 The repository include:
@@ -17,7 +19,7 @@ The app can be tested on iPhone, iPad, AppleTv o Mac
 ## Usage/Examples
 
 The api used is [unsplash](https://unsplash.com)
-In order to test sample projects yout need an access key. Your can register an create anew one in [Join Unsplash](https://unsplash.com/join)
+In order to test sample projects yout need an access key. Your can register and create a free new one on [Join Unsplash](https://unsplash.com/join)
 
 To test initial project just replace the placeholder in class UnplashClient:
 
@@ -30,7 +32,7 @@ To test final sample project, the slides information maybe is useful:
 - You must create a container in CloudKit
 - Create a new record type. Named it "ApiKeys"
 - Add a field to new record type created. Named it "unplash"
-- Add a new recor with your api unsplash access key.
+- Add a new record with your api unsplash access key.
 
 After this steps you must replace this  with real values in class ApiKeyManager:
 

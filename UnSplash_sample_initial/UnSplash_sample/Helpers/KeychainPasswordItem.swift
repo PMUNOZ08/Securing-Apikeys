@@ -285,18 +285,6 @@ class KeychainPasswordItem {
 
 extension KeychainPasswordItem {
     
-    static func getPwSecAccessControl() -> SecAccessControl {
-        var access: SecAccessControl?
-        var error: Unmanaged<CFError>?
-        
-        access = SecAccessControlCreateWithFlags(nil,  // Use the default allocator.
-                                                 kSecAttrAccessibleWhenUnlockedThisDeviceOnly,
-                                                 .applicationPassword,
-                                                 &error)
-        precondition(access != nil, "SecAccessControlCreateWithFlags failed")
-        return access!
-    }
-    
     // MARK: Storing keys in the keychain
     static func makeAndStoreKey(name: String) throws -> SecKey {
         removeKey(name: name)

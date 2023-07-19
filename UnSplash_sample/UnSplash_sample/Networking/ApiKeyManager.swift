@@ -7,7 +7,6 @@
 
 import Foundation
 import CloudKit
-import CommonCrypto
 
 /**
  API Keys used by this app is fetched from CloudKit. This class manages fetching and saving it into Keychain

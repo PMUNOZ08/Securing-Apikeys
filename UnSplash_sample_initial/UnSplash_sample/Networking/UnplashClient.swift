@@ -8,6 +8,11 @@
 
 import Foundation
 
+enum UnSplashEndpoints: String {
+    case generalPhotos = "/photos"
+    case techPhotos = "/collections/4887749/photos"
+}
+
 class UnplashClient: NSObject  {
 
     private let apikey_unsplash = "UNSPLASH ACCESS KEY"
@@ -36,7 +41,7 @@ class UnplashClient: NSObject  {
     
     private func urlRequest() -> URLRequest? {
         guard var url = URL.init(string: host) else { return  nil }
-        url.append(path: "photos")
+        url.append(path: UnSplashEndpoints.techPhotos.rawValue)
         url.append(queryItems: self.queryParamas())
         return  URLRequest.init(url: url)
     }
